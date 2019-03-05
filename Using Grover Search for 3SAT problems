@@ -1,5 +1,6 @@
 import pylab
 import numpy as np
+from qiskit import Aer
 from qiskit import LegacySimulators
 from qiskit.tools.visualization import plot_histogram
 from qiskit_aqua import QuantumInstance
@@ -23,7 +24,7 @@ sat_oracle = SAT(sat_cnf)
 grover = Grover(sat_oracle)
 
 
-backend = LegacySimulators.get_backend('qasm_simulator')
+backend = Aer.get_backend('qasm_simulator')
 quantum_instance = QuantumInstance(backend, shots=100)
 result = grover.run(quantum_instance)
 print(result['result'])
