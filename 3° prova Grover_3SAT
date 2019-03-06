@@ -1,0 +1,14 @@
+p cnf 3 8
+1 2 3 0
+-1 2 3 0
+1 -2 3 0
+-1 -2 3 0
+1 2 -3 0
+-1 2 -3 0
+1 -2 -3 0
+1 -2 -3 0
+
+In questa prova dal punto di vista teorico non si dovrebbe avere la soddisfacibilità per nessun letterale; infatti quando
+andiamo a plottare i risultati hanno tutte le probabilità inferioiri allo 0.20% il che conferma la teroria. Come prova 
+supplementare abbiamo modificato il cnf in modo tale che avesse una sola soluzione valida, attarverso il grafico si può notare 
+che la soluzione unica infatti ha una probabilità di più del 0.45% facndo abbassare ulteriormente tutte le altre.
